@@ -1,46 +1,107 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="icon" href="imagenes/logo.png" type="image/png">
-		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen"/>
-		<meta charset="UTF-8">
-		<title>Es es en local</title>
-	</head>
-	<body>
-		<header>
-			<h1>Mi Blog</h1>
-			<nav>
-				<a href="html/inicio.html">Inicio</a>
-				<a href="#">Acerca de</a>
-				<a href="#">Contacto</a>
-			</nav>
-		</header>
-		<div class="video-container">
-			<video autoplay loop muted playsinline class="video">
-				<source src="videos/lux.mp4" type="video/mp4">
-			</video>
-			<div class="content">
-				<h1>Bienvenidos al blog de Mac</h1>
-			</div>
-		</div>
-		<div class="container">
-		<h2>¿Quién soy?</h2>
-		<p>Soy Mac, tengo 17 años y soy de España.</p>
-
-		<h2>¿Qué estoy estudiando?</h2>
-		<p>Estoy estudiando el ciclo de formación profesional Sistema Microinformáticos y Redes.</p>
-
-		<h2>¿Cuál es mi afición?</h2>
-		<p>Tengo muchas aficiones, estas son algunas de ellas: la fauna marina, los videojuegos, la naturaleza, la vida espiritual, y así me podría pasar diciendo cosas hasta mañana que es martes. Pero si tuviera que destacar sólamente una de todas las que hay, es la informática, ya que pienso que es algo de lo que dependerá el futuro de nuestras vida sin lugar a dudas.</p>
-
-		<h2>¿Por qué creo que la informática es algo de lo que dependerá el futuro la humanidad?</h2>
-		<p>Pienso que para crear cualquier tipo de cosa, necesitas una herramienta que usarás durante el proceso de creación, y sí, estoy hablando de la tecnología. Sin informática, no hay tecnología, y sin tecnología, no hay progreso. Así de claro es. Yo quiero formar parte de esas personas que dejan su pequeño granito de arena en este mundo, como lo hizo Charles Babbage (descanse en paz), quien nos dejó el gran regalo de los ordenadores.</p>
-
-		<h2>¿Cuál fue el motivo principal por el que creé este blog?</h2>
-		<p>El motivo principal por el que cree este blog fue porque quería crear una página web, pero no sabía como hacer (KEKW) así que me busqué la vida para aprende de manera solitaria a como crear un servidor en el que hostear una página web.</p>
-
-		<h2>¿Cómo me las apañé para esto yo solo sin pagar?</h2>
-		<p>Tenía los principios básicos de como crear una página web con HTML, CSS y un poco de JavaScript, pero no tenía dinero para pagar un hosting privado en el que alojar mi blog. Así que me paré y pensé, y dije "¿Y si utilizo los servidores de AWS para alojar mi página web?". Así que si ^^, esta página que estas viendo ahora mismo está alojada y creada en una instancia de AWS con un núcleo, un GiB de RAM y con un Ubuntu Server. Tal vez fui la primera persona en crear esto en AWS, pero si algo sé, es que me siento muy orgullo de haber creado esto yo solo y sin pagar ni un duro, que es lo mejor.</p>
-		</div>
-	</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  }
+  header {
+  background-color: #222222;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  }
+  
+  h1 {
+  font-size: 32px;
+  color:#FFFFFF;
+  margin: 0;
+  }
+  
+  nav {
+  display: flex;
+  }
+  
+  nav a {
+  display: block;
+  margin-left: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
+  nav a:hover {
+  color: #444444;
+  }
+  
+  .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  h2 {
+  font-size: 48px;
+  margin: 0 0 20px;
+  }
+  
+  p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 50px;
+  }
+  
+  .button {
+  background-color: #FF6F61;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+  background-color: #E85A4F;
+  }
+  
+  .video-container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  
+  .image h3 {
+  font-size: 32px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 150px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
